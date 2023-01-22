@@ -1,0 +1,78 @@
+body {
+    background-color: #282c34;
+}
+
+.app {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 50px 0px 50px 0px;
+}
+
+.app-info {
+    padding: 25px;
+    background-color: #3d5a80;
+    border-radius: 4px;
+    box-shadow: 15px 15px 30px rgba(161, 161, 161, 0.15);
+    color: #fff;
+}
+
+
+.app-info .send-question {
+    text-align: center;
+}
+
+.app-info .form-list {
+    width: 100%;
+}
+
+.app-info .form-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.app-info .input-info {
+    width: 840px;
+}
+
+.app-info .btn-light {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+.app-questions {
+    margin: 10px 0px;
+    padding: 25px;
+    background-color: #3d5a80;
+    border-radius: 4px;
+    box-shadow: 15px 15px 30px rgba(161, 161, 161, 0.15);
+    color: #fff;
+}
+
+.question {
+    margin-bottom: 10px;
+}
+
+.input-question {
+    display: inline-block;
+    width: 840px;
+}
+
+.submit-question {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.fa-trash {
+    display: inline-block;
+    color: #2a6ec7;
+}
+
+.fa-save {
+    display: inline-block;
+    color: #2a6ec7;
+}

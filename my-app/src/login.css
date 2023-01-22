@@ -1,0 +1,36 @@
+body {
+    background-color: #282c34;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #3d5a80;
+    margin: 150px auto;
+    display: flex;
+    align-items: center;
+    padding: 50px 50px;
+}
+
+.login_form {
+    text-align: center;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0 20px 0 ;
+}
+
+.btn_submit {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.field_item {
+    width: 400px;
+    display: block;
+    margin-bottom: 10px;
+}
