@@ -1,11 +1,11 @@
 import { Component } from "react";
-import "./login.css";
-import Page from "./pageQuestion";
+import "../Login/login.css";
+// import Page from "../PageQuestion/pageQuestion";
 
 const login = 'admin'
 const password = '1234'
 
-class Login extends Component {
+class Registration extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -16,15 +16,9 @@ class Login extends Component {
     } 
 
 
-    onChangeLogin = (e) => {
+    onChangeCredentials = (e) => {
         this.setState({
-            login: e.target.value
-        })
-    }
-
-    onChangePassword = (e) => {
-        this.setState({
-            password: e.target.value
+            [e.target.name]: e.target.value
         })
     }
 
@@ -45,33 +39,33 @@ class Login extends Component {
     render() {
         return(
             <div>
-                {this.state.enter ? <Page/> : 
+                {/* {this.state.enter ? <Page/> :  */}
                     <div className="container">
                         <form onSubmit={this.onSubmit}>
-                            <h2  className="login_form" style={{color: '#fff'}}>Вход в личный кабинет</h2>
-                            <div className="fields">
-                                <div className="field_1">
+                            <h2  className="login_form" style={{color: '#fff'}}>Регистрация</h2>
+                            <div className="login_form__fields">
+                                <div className="login_form__field_1">
                                     <label style={{color: '#fff'}}>
                                         Введите имя    
-                                        <input className="field_item" type="text" onChange={this.onChangeLogin} value={this.state.login}></input>
+                                        <input className="login_form__fields field_item" type="text" onChange={this.onChangeCredentials} value={this.state.login} name="login"></input>
                                     </label>
                                 </div>
-                                <div className="field_2">
+                                <div className="login_form__field_2">
                                     <label style={{color: '#fff'}}>
                                         Введите пароль
-                                        <input className="field_item" type="password" onChange={this.onChangePassword} value={this.state.password}></input>
+                                        <input className="login_form__fields field_item" type="password" onChange={this.onChangeCredentials} value={this.state.password} name="password"></input>
                                     </label>
                                 </div>
                             </div>
                             <div className="btn_submit">
-                                <button type="submit" className="btn btn-light form-item">Войти</button>
+                                <button type="submit" className="btn btn-light form-item">Продолжить</button>
                             </div>
                         </form>
                     </div>
-                }
+                {/* } */}
             </div>
         )
     }
 }
 
-export default Login;
+export default Registration;
